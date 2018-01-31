@@ -3,7 +3,7 @@ require('should');
 require('should-promised');
 const path = require('path');
 const runGulpTask = require('../index');
-const PluginError = require('gulp-util').PluginError;
+const PluginError = require('plugin-error');
 const CWD = process.cwd();
 
 describe('runGulpTask', () => {

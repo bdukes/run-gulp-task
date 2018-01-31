@@ -1,7 +1,7 @@
 'use strict';
 
 let gulp = require('gulp');
-let PluginError = require('gulp-util').PluginError;
+let PluginError = require('plugin-error');
 let through = require('through2');
 
 gulp.task('build', () => {
