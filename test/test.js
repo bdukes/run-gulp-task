@@ -41,7 +41,7 @@ describe('runGulpTask', () => {
   });
   it('should reject when gulp task error', () => {
     return runGulpTask('error')
-      .should.be.rejectedWith(PluginError);
+      .should.be.rejectedWith(Error);
   });
   it('should reject when no task name', () => {
     return runGulpTask()
